@@ -1,0 +1,117 @@
+html {
+	margin: 0;
+}
+body {
+	margin: 0;
+}
+.nav {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+	margin-right: 10px;
+	height: 50px;
+	background-color: #312F35;
+	color: #DFE6E9;
+}
+
+.navTab {
+	flex: 0 0 100px;
+}
+
+.navDiv {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #312F35;
+}
+#navResume {
+	height: 30px;
+	width: 90%;
+	background-color: #312F35;
+	color: #F60853;
+	border: 2px solid #F60853; 
+	border-radius: 6px;
+}
+
+.line {
+	height: 3px;
+	width: 199px;
+	background-color: #F60853;
+}
+
+#myName {
+	margin: 3px;
+	padding:0;
+	line-height: 80%;
+	font-size: 64px;
+	font-family: 'Roboto', sans-serif;
+	color: #F60853;
+}
+#hello {
+	font-size: 20px;
+	color: #F60853;
+}
+
+.homeContentContainer {
+	background-color: #312F35;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.homeContent {
+	position: relative;
+	text-align: center;
+	width: 50%;
+}
+
+.homeContent > div {
+	margin: auto;
+}
+
+.pTitle {
+	color: #DFE6E9;
+	margin: 3px;
+}
+
+.homeContent > button > a {
+	text-decoration: none;
+	color: #F60853;
+}
+.homeContent > button {
+	height: 30px;
+	width: 100px;
+	background-color: #312F35;
+	color: #F60853;
+	border: 2px solid #F60853; 
+	border-radius: 6px;	
+}
+
+#secondScreen {
+	background-color: #DFE6E9;
+	margin: 0;
+}
+
+#secondScreen > h1 {
+	margin: 0;
+	color: #F60853;
+	text-align: center;
+	width: 70%;
+}
+
+.titleDeco2 {
+	border-color: 
+}
+ 
+iframe {
+	width: 350px;
+	height: 350px;
+	border: none;
+	display: inline;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
