@@ -11,7 +11,7 @@ var isStop = false;
 var count = 0;
 
 function preload() {
-  imgs[0] = loadImage('profile.png'); 
+  imgs[0] = loadImage('https://crossorigin.me/https://github.com/yinyinUMSI/websiteVersion2/blob/master/firstScreenAnimation/profile.png'); 
 }
 
 function setup() {
