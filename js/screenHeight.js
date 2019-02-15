@@ -3,6 +3,8 @@ $(function() {
 	$(window).resize(function() {
 		
 		$(".homeContentContainer").css('height',(window.innerHeight).toString()+"px");
+		$("iframe").css('height',((window.innerHeight)-50).toString()+"px");
+		$("iframe").css('width',(window.innerWidth).toString()+"px");
 		// $("#secondScreen").css('height',window.innerHeight.toString()+"px");
 		// $("#thirdScreen").css('height',window.innerHeight.toString()+"px");
 		// $("#fourthScreen").css('height',window.innerHeight.toString()+"px");
@@ -21,6 +23,8 @@ $(function() {
 
 $(function() {
 	$(".homeContentContainer").css('height',(window.innerHeight).toString()+"px");
+	$("iframe").css('height',((window.innerHeight)-40).toString()+"px");
+	$("iframe").css('width',(window.innerWidth).toString()+"px");
 	// $("#secondScreen").css('height',window.innerHeight.toString()+"px");
 	// $("#thirdScreen").css('height',window.innerHeight.toString()+"px");
 	// $("#fourthScreen").css('height',window.innerHeight.toString()+"px");
