@@ -1,4 +1,4 @@
-var MAX_NUM = 150;
+var MAX_NUM;
 var particles = new Array();
 var dist_threshold = 150;
 
@@ -6,6 +6,7 @@ var dist_threshold = 150;
 function setup() {
   // createCanvas(windowWidth, windowHeight-50);
   createCanvas(displayWidth, displayHeight-50);
+  MAX_NUM = floor(displayWidth/100)*floor(displayHeight/100);
   for (let i = 0; i < MAX_NUM; i++)
   {
     particles.push(new Particle());
