@@ -434,6 +434,11 @@ $(function() {
 	$ ("#logoGithub").hover(popOut,popBack);
 	$ ("#logoMedium").hover(popOut,popBack);
 	$ ("#logoFacebook").hover(popOut,popBack);
+	$ ("#logoLinkedin").click(popBack);
+	$ ("#logoGithub").click(popBack);
+	$ ("#logoMedium").click(popBack);
+	$ ("#logoFacebook").click(popBack);
+
 });
 
 function popOut() {
