@@ -20,6 +20,7 @@ $(function() {
 		$(".homeContent").css('width',(window.innerWidth).toString()+"px");
 		$("#secondScreen").css('width',window.innerWidth.toString()+"px");
 		$("#thirdScreen").css('width',window.innerWidth.toString()+"px");
+		$("#fourthScreen").css('width',window.innerWidth.toString()+"px");
 		// $("#triangle").css('border-right',window.innerWidth.toString()+"px"+" solid red");		
 	});
 });
@@ -31,6 +32,7 @@ $(function() {
 	$("#myLogo").css('margin-right',(window.innerWidth-530).toString()+"px");
 	$("#secondScreen").css('width',window.innerWidth.toString()+"px");
 	$("#thirdScreen").css('width',window.innerWidth.toString()+"px");
+	$("#fourthScreen").css('width',window.innerWidth.toString()+"px");
 	// $("#secondScreen").css('height',window.innerHeight.toString()+"px");
 	// $("#thirdScreen").css('height',window.innerHeight.toString()+"px");
 	// $("#fourthScreen").css('height',window.innerHeight.toString()+"px");
