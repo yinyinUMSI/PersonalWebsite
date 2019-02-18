@@ -1,3 +1,6 @@
+/*mutual part*/
+
+
 /*html {
 	margin: 0;
 }*/
@@ -10,16 +13,28 @@ body {
 	align-items: center;
 	justify-content: flex-end;
 	margin-right: 10px;
-	height: 50px;
+	height: 70px;
 	background-color: #312F35;
 	color: #DFE6E9;
 	font-family: 'Roboto', sans-serif;
 }
 
-.navTab {
-	flex: 0 0 100px;
+#myLogo {
+	width: 35px;
+	cursor: pointer;
 }
 
+#myLogo:hover {
+	width: 40px;
+}
+
+.navTab {
+	flex: 0 0 150px;
+	cursor: pointer;
+}
+.navTab:hover {
+	font-size: 20px;
+}
 .navDiv {
 	position: fixed;
 	top: 0;
@@ -40,8 +55,8 @@ body {
 }
 
 .line {
-	height: 2px;
-	width: 170px;
+	height: 4px;
+	width: 200px;
 	border-radius: 1px;
 	background-color: #F60853;
 	margin: 4px 0 0px 0;
@@ -52,7 +67,7 @@ body {
 	padding:0;
 	line-height: 100%;
 	font-size: 64px;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Oxygen', sans-serif;
 	color: #F60853;
 	padding: auto;
 }
@@ -118,18 +133,9 @@ body {
 .homeContent > button > a:hover {
 	color: #DFE6E9;
 }
-#secondScreen {
-	background-color: #DFE6E9;
-	margin: 0;
-	padding: 0;
-}
 
-#secondScreen > h1 {
-	margin: 0;
-	color: #F60853;
-	text-align: center;
-	width: 70%;
-}
+
+
 
 .titleDeco2 {
 	border-color: 
@@ -144,6 +150,7 @@ iframe {
 	bottom: 0;
 	right: 0;
 	z-index: 1;
+	margin: 0;
 }
 .notation {
 	font-size: 10px;
@@ -162,7 +169,7 @@ iframe {
 .contactGroup {
 	position: absolute;
 	bottom: 150px;
-	left: -45px;
+	left: -50px;
 	z-index: 3;
 	/*display: flex;*/
 	/*height: 135px;

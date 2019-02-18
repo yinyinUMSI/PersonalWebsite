@@ -408,6 +408,8 @@
 // 	console.log("moveout");
 // };
 
+//----------------following code controls the contact icons on the side
+//when loaded, mouse moves in/ out and click
 $(function() {
 	var tContact = anime.timeline({
 		easing: 'easeOutExpo',
@@ -458,3 +460,38 @@ function popBack() {
 	});
 	console.log("mouseout");
 }
+//when arrives at a certain position disappear
+$(function() {
+	 $(window).scroll(function() {
+		var element = $(".contactGroup");
+		var offset = element.position();
+		offset = offset.top-$(window).scrollTop();
+		if (offset < 200) {
+			// console.log("close");
+			var element = element.get(0);
+			anime ({
+			targets: element,
+			translateX: -50,
+			easing: 'easeOutExpo'
+			});
+		}
+	 });
+});
+
+//when arrives at a certain position appear again
+$(function() {
+	 $(window).scroll(function() {
+		var element = $(".contactGroup");
+		var offset = element.position();
+		offset = offset.top-$(window).scrollTop();
+		if (offset > 200) {
+			// console.log("close");
+			var element = element.get(0);
+			anime ({
+			targets: element,
+			translateX: 0,
+			easing: 'easeOutExpo'
+			});
+		}
+	 });
+});

@@ -1,0 +1,71 @@
+#thirdScreen {
+	background-color: #312F35;
+	margin: 0;
+	padding: 0;
+}
+
+.illustrUnder {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	margin-bottom: 40px;
+}
+
+.illustrUnder img {
+	width: 32px;
+	padding: 0px;
+	margin: 0px;
+}
+.illustrUnder p {
+	font-family: 'Quicksand', sans-serif;
+	font-size:12px;
+	font-weight: ;
+	padding: 0px;
+	margin: 0px;
+	color: #F60853;
+}
+
+.iconGroup {
+	margin: 15px;
+	text-align: center;
+	vertical-align: bottom;
+	padding-bottom: 0;
+}
+
+.gridWrapper {
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(500px, 1fr));
+	grid-gap: 10px;
+}
+
+.skillGrid {
+	grid-column: 1/2;	
+}
+.timeGrid {
+	grid-column: 2/3;
+	border-left: 2px solid #DFE6E9;
+}
+.timeGrid i {
+	font-size: 10px;
+	color: #DFE6E9;
+	position: relative;
+	left: -6px;
+	top: -6px;
+}
+
+.timeGrid .pTitle {
+	position: relative;
+	left: 18px;
+	top: -25px;
+	margin-bottom: 15px;
+}
+
+.timeGrid .pContent {
+	position: relative;
+	left: 25px;
+	top: -25px;
+	margin: 4px;
+	color: rgba(223,230,233,0.6);
+	font-family: 'Quicksand', sans-serif;
+	font-size: 14px;
+}

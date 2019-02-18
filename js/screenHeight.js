@@ -3,8 +3,9 @@ $(function() {
 	$(window).resize(function() {
 		
 		$(".homeContentContainer").css('height',(window.innerHeight).toString()+"px");
-		$("iframe").css('height',((window.innerHeight)-50).toString()+"px");
-		$("iframe").css('width',(window.innerWidth).toString()+"px");
+		$("iframe").css('height',((window.innerHeight)-70).toString()+"px");
+		$("iframe").css('width',(window.innerWidth-20).toString()+"px");
+		$("#myLogo").css('margin-right',(window.innerWidth-530).toString()+"px");
 		// $("#secondScreen").css('height',window.innerHeight.toString()+"px");
 		// $("#thirdScreen").css('height',window.innerHeight.toString()+"px");
 		// $("#fourthScreen").css('height',window.innerHeight.toString()+"px");
@@ -17,39 +18,27 @@ $(function() {
 	$(window).resize(function() {
 		$("#firstScreen").css('width',window.innerWidth.toString()+"px");
 		$(".homeContent").css('width',(window.innerWidth).toString()+"px");
+		$("#secondScreen").css('width',window.innerWidth.toString()+"px");
+		$("#thirdScreen").css('width',window.innerWidth.toString()+"px");
 		// $("#triangle").css('border-right',window.innerWidth.toString()+"px"+" solid red");		
 	});
 });
 
 $(function() {
 	$(".homeContentContainer").css('height',(window.innerHeight).toString()+"px");
-	$("iframe").css('height',((window.innerHeight)-40).toString()+"px");
-	$("iframe").css('width',(window.innerWidth).toString()+"px");
+	$("iframe").css('height',((window.innerHeight)-70).toString()+"px");
+	$("iframe").css('width',(window.innerWidth-20).toString()+"px");
+	$("#myLogo").css('margin-right',(window.innerWidth-530).toString()+"px");
+	$("#secondScreen").css('width',window.innerWidth.toString()+"px");
+	$("#thirdScreen").css('width',window.innerWidth.toString()+"px");
 	// $("#secondScreen").css('height',window.innerHeight.toString()+"px");
 	// $("#thirdScreen").css('height',window.innerHeight.toString()+"px");
 	// $("#fourthScreen").css('height',window.innerHeight.toString()+"px");
 	$("#firstScreen").css('width',window.innerWidth.toString()+"px");
 	$(".homeContent").css('width',(window.innerWidth).toString()+"px");
-	$("#yinIMG").css('width',((window.innerWidth)*0.7).toString()+"px");
-	$(window).resize(function() {		
-		$("#yinIMG").css('width',((window.innerWidth)*0.7).toString()+"px");
-	});
 });
 
-$(function() {
-	 $(window).scroll(function() {
-		var element = $("#titleScreen3");
-		var offset = element.position();
-		offset = offset.top-$(window).scrollTop();
-		if (offset < 30 && offset>-30) {
-			console.log("close");
-			barMoveOne();
-			setTimeout(barMoveTwo,300);
-			setTimeout(barMoveThree,600);
-			setTimeout(barMoveFour,900);
-		}
-	 });
-});
+
 
 $(function() {
 	 $(window).scroll(function() {
@@ -76,17 +65,7 @@ $(function() {
 });
 
 
-$(function() {
-	 $(window).scroll(function() {
-		var element = $("#fourthScreen");
-		var offset = element.position();
-		offset = offset.top-$(window).scrollTop();
-		if (offset < 200 && offset>-200) {
-			console.log("close");
-			titleDecoExpand4();
-		}
-	 });
-});
+
 
 
 $(function() {

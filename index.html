@@ -2,16 +2,20 @@
 <html>
 <head>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Assistant|Barlow|Roboto|Roboto+Condensed|Oswald" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Assistant|Barlow|Roboto|Roboto+Condensed|Oswald|Oxygen|Quicksand" rel="stylesheet">
     <link href="./CSS/firstPage.css" rel="stylesheet" type="text/css">
+    <link href="./CSS/secondPage.css" rel="stylesheet" type="text/css">
+    <link href="./CSS/thirdPage.css" rel="stylesheet" type="text/css">
+    <link href="./CSS/fourthPage.css" rel="stylesheet" type="text/css">
     <!-- <link href="css/mutualStyle.css" rel="stylesheet" type="text/css"> -->   
     <script type="text/javascript" src="js_src/jquery-3.3.1.min.js"></script>
+    <script src="js/goTo.js"></script>
     <script src="js_src/anime.min.js"></script>
     <script src="js/animation.js"></script>
     <script type="text/javascript" src="js/screenHeight.js"></script> <!-- 因为放在前面就可以用前面文件的变量吗 -->
     <!-- <script type="text/javascript" src="js/basic.js"></script> -->
     <!-- <link rel="bookmark"  type="image/x-icon"  href="favicon.ico"/> -->
-    <!-- <link rel="shortcut icon" href="img/foricon1.ico"> -->
+    <link rel="shortcut icon" href="icon/titleIcon.ico">
     <title>Yin Yin Portfolio</title>
 </head>
 
@@ -20,11 +24,12 @@
 	<div id="firstScreen">
 		<div class="navDiv">
 			<div class="nav">
+				<img src="icon/myLogo.png" id="myLogo">
 				<!-- <a id="navfirstScreen" class="navSpecial"><img src="img/logo.png" style="width:40px"></a> -->
-				<div class="navTab"><a id="navsecondScreen" >Portfolio</a></div>
-				<div class="navTab"><a id="navthirdScreen" >About me</a></div>
-				<div class="navTab"><a id="navfourthScreen" >Contact</a></div>
-				<div class="navTab"><button id="navResume">Resume</button></div>
+				<div class="navTab" id="portfolioPage"><a>Portfolio</a></div>
+				<div class="navTab" id="aboutMePage"><a>About me</a></div>
+				<div class="navTab" id="contactPage"><a>Contact</a></div>
+				<!-- <div class="navTab"><button id="navResume">Resume</button></div> -->
 			</div>
 		</div>
 
@@ -77,47 +82,102 @@
 	<!--The second screen-->
 	<div id="secondScreen">
 		<div class="title2">
+			<div class="titleDeco2"></div>
 			<h1 class="titleScreen"> PORTFOLIO </h1>
 			<div class="titleDeco2"></div>
 		</div>
-		<div class="illustrUnder">			
-			<span><i class="fas fa-pencil-ruler"></i><p>UX research & design</p></span>
-			<span><i class="fas fa-code"></i><p>Develop</p></span>
-		</div>
 		<div class="displayWorks">
-			<a href="P1_501Pro.html">
+			<div class="leftCol">
 			<div class="imgCover" id="imgCover1">
 				<div class="dw1 dw">
-					<img src="img/P1Cover.png">
-					<h2>Improve the referral working process of a health care provider</h2>
+					<img src="img/project1Cover.png">
+					<!-- <h2>Improve the referral working process of a health care provider</h2> -->
 				</div>
-				<div class="cover" id="cover1">
+				<!-- <div class="cover" id="cover1">
 					<ul>
 						<li>User Research</li>
 						<li>Qualititive Data Analysis</li>
 						<li>Interview</li>
 					</ul>
-				</div>
+				</div> -->
 			</div>
-			</a>
 
-			<a href="P2_UIMatrix.html">
+			<div class="imgCover" id="imgCover5">
+				<div class="dw1 dw">
+					<img src="img/project5Cover.png">
+					<!-- <h2>Improve the referral working process of a health care provider</h2> -->
+				</div>
+				<!-- <div class="cover" id="cover2">
+					<ul>
+						<li>User Research</li>
+						<li>Qualititive Data Analysis</li>
+						<li>Interview</li>
+					</ul>
+				</div> -->
+			</div>
+
+			<div class="imgCover" id="imgCover4">
+				<div class="dw1 dw">
+					<img src="img/project4Cover.png">
+					<!-- <h2>Improve the referral working process of a health care provider</h2> -->
+				</div>
+				<!-- <div class="cover" id="cover2">
+					<ul>
+						<li>User Research</li>
+						<li>Qualititive Data Analysis</li>
+						<li>Interview</li>
+					</ul>
+				</div> -->
+			</div>
+			</div>
+			
+			<div class="rightCol">
 			<div class="imgCover" id="imgCover2">
 				<div class="dw2 dw">
-					<img src="img/code1.png">
-					<h2>Urgent and Important Matrix Reminder</h2>
+					<img src="img/project2Cover.png">
+					<!-- <h2>Improve the referral working process of a health care provider</h2> -->
 				</div>
-				<div class="cover" id="cover2">
+				<!-- <div class="cover" id="cover2">
 					<ul>
-						<li>HTML</li>
-						<li>CSS</li>
-						<li>JS</li>
-						<li>indexedDB</li>
+						<li>User Research</li>
+						<li>Qualititive Data Analysis</li>
+						<li>Interview</li>
 					</ul>
-				</div>
+				</div> -->
 			</div>
-			</a>
 
+			<div class="imgCover" id="imgCover3">
+				<div class="dw2 dw">
+					<img src="img/project3Cover.png">
+					<!-- <h2>Improve the referral working process of a health care provider</h2> -->
+				</div>
+				<!-- <div class="cover" id="cover2">
+					<ul>
+						<li>User Research</li>
+						<li>Qualititive Data Analysis</li>
+						<li>Interview</li>
+					</ul>
+				</div> -->
+			</div>
+			
+
+			<div class="imgCover" id="imgCover6">
+				<div class="dw2 dw">
+					<img src="img/project6Cover.png">
+					<!-- <h2>Improve the referral working process of a health care provider</h2> -->
+				</div>
+				<!-- <div class="cover" id="cover2">
+					<ul>
+						<li>User Research</li>
+						<li>Qualititive Data Analysis</li>
+						<li>Interview</li>
+					</ul>
+				</div> -->
+			</div>
+			</div>
+			
+		
+			
 			<div class="imgCover" id="imgCover3">
 				<div class="dw3 dw"><img src="img/sunset.jpg"><h2>.......</h2></div><div class="cover" id="cover3"></div>
 			</div>
@@ -189,37 +249,81 @@
 	</div>
 
 	<div id="thirdScreen">
-		<h1 class="titleScreen" id="titleScreen3"> About Me</h1>
-		<div class="titleDeco3"></div>
-		<div class="illustrUnder">
-			<span><i class="fas fa-users"></i><p>team-player</p></span>
-			<span><i class="fas fa-running"></i><p>self-motivated</p></span>
-			<span><i class="fas fa-book-reader"></i><p>fast leaner</p></span>
-			<span><i class="fas fa-bullseye"></i><p>goal-oriented</p></span>
-			<span><i class="fas fa-laptop-code"></i><p>CS background</p></span>
+		<div class="title2">
+			<div class="titleDeco2"></div>
+			<h1 class="titleScreen"> About  Me </h1>
+			<div class="titleDeco2"></div>
 		</div>
-		<div class="wrapper">
-		<div class="wholeTimeline">
-			<div class="timePart">
-				<i class="fas fa-circle"></i><hr>	
-				<p class="pTitle">Dalian University of Technology</p>
-				<p class="pContent">Computer Science | Bachelor</p>
-				<p class="pContent">Class of 2017</p>
-			</div>
-			<div class="timePart">
-				<i class="fas fa-circle"></i><hr>
-				<p class="pTitle">Product Manager Intern</p>
-				<p class="pContent">Brand Advertising Group | AUTOHOME</p>
-				<p class="pContent">2016.11~2017.4</p>
-			</div>
-			<div class="timePart">
-				<i class="fas fa-circle"></i><hr>
-				<p class="pTitle">University of Michigan</p>
-				<p class="pContent">Science of Information | Master</p>
-				<p class="pContent">Class of 2020</p>
-			</div>
-<!-- 限定高度后为什么里面的文字没有把高度撑起来 -->
+		<div class="illustrUnder">
+			<div class="iconGroup"><img src="icon/group.png"><p>team-player</p></div>
+			<div class="iconGroup"><img src="icon/running.png"><p>self-motivated</p></div>
+			<div class="iconGroup"><img src="icon/flag.png" height="30px"><p>fast leaner</p></div>
+			<div class="iconGroup"><img src="icon/creative.png"><p>goal-oriented</p></div>
+			<div class="iconGroup"><img src="icon/coding.png"><p>CS background</p></div>
+		</div>
+		<div class="gridWrapper">
+			<div class="skillGrid">
+				<div class="animationOne">
+					<div class="animationTitle">HTML/CSS/JS</div>
+					<div class="squareGrey"><div class="squareColor squareColor1" id="squareColor1"></div></div>
+				</div>
 
+				<div class="animationOne">
+					<div class="animationTitle special">User Centered Design</div>
+					<div class="squareGrey specialG"><div class="squareColor squareColor1" id="squareColor2"></div></div>
+				</div>
+
+				<div class="animationOne">
+					<div class="animationTitle">JQuery</div>
+					<div class="squareGrey"><div class="squareColor squareColor2" id="squareColor3"></div></div>
+				</div>
+
+				<div class="animationOne">
+					<div class="animationTitle special">User Research</div>
+					<div class="squareGrey specialG"><div class="squareColor squareColor2 " id="squareColor4"></div></div>
+				</div>
+
+				<div class="animationOne">
+					<div class="animationTitle">C/C++</div>
+					<div class="squareGrey "><div class="squareColor squareColor3" id="squareColor5"></div></div>
+				</div>
+
+				<div class="animationOne">
+					<div class="animationTitle special">Needs Assessment</div>
+					<div class="squareGrey specialG"><div class="squareColor squareColor3" id="squareColor6"></div></div>
+				</div>
+
+				<div class="animationOne">
+					<div class="animationTitle">Python</div>
+					<div class="squareGrey"><div class="squareColor squareColor4" id="squareColor7"></div></div>
+				</div>
+
+				<div class="animationOne">
+					<div class="animationTitle special">Usability Test</div>
+					<div class="squareGrey specialG"><div class="squareColor squareColor4" id="squareColor8"></div></div>
+				</div>
+			</div>
+			<div class="timeGrid">
+				<div class="timePart">
+					<i class="fas fa-circle"></i>	
+					<p class="pTitle">Dalian University of Technology</p>
+					<p class="pContent">Computer Science | Bachelor</p>
+					<p class="pContent">Class of 2017</p>
+				</div>
+				<div class="timePart">
+					<i class="fas fa-circle"></i>
+					<p class="pTitle">Product Manager Intern</p>
+					<p class="pContent">Brand Advertising Group | AUTOHOME</p>
+					<p class="pContent">2016.11~2017.4</p>
+				</div>
+				<div class="timePart">
+					<i class="fas fa-circle"></i>
+					<p class="pTitle">University of Michigan</p>
+					<p class="pContent">Science of Information | Master</p>
+					<p class="pContent">Class of 2020</p>
+				</div>
+<!-- 限定高度后为什么里面的文字没有把高度撑起来 -->
+			</div>
 			<div class="timeP4">
 				
 			</div>
@@ -277,14 +381,17 @@
 	</div>
 
 	<div id="fourthScreen">
-		<h1 class="titleScreen" id="titleScreen4">Contact</h1>
-		<div class="titleDeco4"></div>
+		<div class="title2">
+			<div class="titleDeco2"></div>
+			<h1 class="titleScreen"> CONTACT </h1>
+			<div class="titleDeco2"></div>
+		</div>
 		<blockquote cite="http://example.com/facts">
 			<p>One day you'll leave this world behind, so live a life you will remember.</p>
 		</blockquote>
 		<div class="contactInfo">
 			<div class="contactPic">
-				<img src="img/profilePic.jpg">
+				<img src="img/myPicture.jpg">
 			</div>
 			<div class="profWords">
 				<p>I’m a passionate non-academic coder. I always try to create aesthetics with code. Besides front-end development and UX design, I did a lot in creative coding with Processing and Arduino. I like traveling, drawing, tasting different food and making friends. 
