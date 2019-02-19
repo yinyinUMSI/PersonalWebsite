@@ -17,6 +17,7 @@ body {
 	height: 70px;
 	background-color: #312F35;
 	color: #DFE6E9;
+	font-size: 18px;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -120,12 +121,12 @@ body {
 }
 .homeContent > button {
 	height: 40px;
-	width: 150px;
+	width: 160px;
 	background-color: #312F35;
 	color: #F60853;
 	border: 2px solid #F60853; 
 	border-radius: 6px;	
-	margin: 10px 15px;
+	margin: 10px 11px;
 }
 .homeContent > button:hover {
 	background-color: #F60853;	

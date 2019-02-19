@@ -43,29 +43,108 @@
 }
 .timeGrid {
 	grid-column: 2/3;
+	justify-self: start;
+	padding-top: 10px;
+	padding-left: 120px;
+}
+.timePart {
 	border-left: 2px solid #DFE6E9;
+	margin: 0;
+	height: 120px;
 }
 .timeGrid i {
 	font-size: 10px;
 	color: #DFE6E9;
 	position: relative;
-	left: -6px;
-	top: -6px;
+	left: -40px;
+	top: -22px;
 }
 
 .timeGrid .pTitle {
 	position: relative;
 	left: 18px;
-	top: -25px;
+	top: -45px;
 	margin-bottom: 15px;
 }
 
 .timeGrid .pContent {
 	position: relative;
 	left: 25px;
-	top: -25px;
+	top: -50px;
 	margin: 4px;
 	color: rgba(223,230,233,0.6);
 	font-family: 'Quicksand', sans-serif;
 	font-size: 14px;
+}
+
+.specialDot {
+	padding: 0;
+	height: 0px;
+	right: 0px;
+}
+.timeGrid img {
+	width:30px;
+	position: relative;
+	left: -50px;
+	top:-14px;
+}
+
+.squareColor {
+	width: 10px;
+	height: 6px;
+	background-color: #F60853;
+}
+
+.squareGrey {
+	height: 7px;
+	width: 250px;
+	border: 1px solid #DFE6E9;
+	border-radius: 2px;
+	margin: auto 0;
+	/*margin: 10px 0px 10px 15%;*/
+}
+
+.squareWrapper {
+	height: 45px;
+	padding-top: 10px;
+}
+
+.animationGroup {
+	
+	justify-self: start; 
+}
+
+.skillGrid {
+	display: flex;
+	grid-template-columns: 1fr 1fr; 
+	justify-self: end;
+	padding-right: 100px; 
+}
+
+.animationTitleGroup {
+	justify-self: end;
+	padding-left: 140px;
+	width: 120px;
+}
+
+.animationTitleGroup ul {
+	margin: 0;
+	padding: 0;
+}
+
+.animationTitle {
+	font-family: 'Roboto', sans-serif;
+	
+	word-wrap: break-word;
+	width: 120px;
+	list-style-type: none;
+	color: #DFE6E9;
+	height: 45px;
+	padding-top: 10px;
+	padding-right: 2px;
+	/*justify-content: center;*/
+}
+
+.ul {
+	text-decoration: none;
 }

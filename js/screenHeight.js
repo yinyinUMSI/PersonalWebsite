@@ -6,6 +6,7 @@ $(function() {
 		$("iframe").css('height',((window.innerHeight)-70).toString()+"px");
 		$("iframe").css('width',(window.innerWidth-20).toString()+"px");
 		$("#myLogo").css('margin-right',(window.innerWidth-530).toString()+"px");
+		$(".navDiv").css('width',(window.innerWidth).toString()+"px");
 		// $("#secondScreen").css('height',window.innerHeight.toString()+"px");
 		// $("#thirdScreen").css('height',window.innerHeight.toString()+"px");
 		// $("#fourthScreen").css('height',window.innerHeight.toString()+"px");
@@ -16,11 +17,11 @@ $(function() {
 
 $(function() {
 	$(window).resize(function() {
-		$("#firstScreen").css('width',window.innerWidth.toString()+"px");
+		// $("#firstScreen").css('width',window.innerWidth.toString()+"px");
 		$(".homeContent").css('width',(window.innerWidth).toString()+"px");
-		$("#secondScreen").css('width',window.innerWidth.toString()+"px");
-		$("#thirdScreen").css('width',window.innerWidth.toString()+"px");
-		$("#fourthScreen").css('width',window.innerWidth.toString()+"px");
+		// $("#secondScreen").css('width',window.innerWidth.toString()+"px");
+		// $("#thirdScreen").css('width',window.innerWidth.toString()+"px");
+		// $("#fourthScreen").css('width',window.innerWidth.toString()+"px");
 		// $("#triangle").css('border-right',window.innerWidth.toString()+"px"+" solid red");		
 	});
 });
@@ -30,13 +31,14 @@ $(function() {
 	$("iframe").css('height',((window.innerHeight)-70).toString()+"px");
 	$("iframe").css('width',(window.innerWidth-20).toString()+"px");
 	$("#myLogo").css('margin-right',(window.innerWidth-530).toString()+"px");
-	$("#secondScreen").css('width',window.innerWidth.toString()+"px");
-	$("#thirdScreen").css('width',window.innerWidth.toString()+"px");
-	$("#fourthScreen").css('width',window.innerWidth.toString()+"px");
+	$(".navDiv").css('width',(window.innerWidth).toString()+"px");
+	// $("#secondScreen").css('width',window.innerWidth.toString()+"px");
+	// $("#thirdScreen").css('width',window.innerWidth.toString()+"px");
+	// $("#fourthScreen").css('width',window.innerWidth.toString()+"px");
 	// $("#secondScreen").css('height',window.innerHeight.toString()+"px");
 	// $("#thirdScreen").css('height',window.innerHeight.toString()+"px");
 	// $("#fourthScreen").css('height',window.innerHeight.toString()+"px");
-	$("#firstScreen").css('width',window.innerWidth.toString()+"px");
+	// $("#firstScreen").css('width',window.innerWidth.toString()+"px");
 	$(".homeContent").css('width',(window.innerWidth).toString()+"px");
 });
 

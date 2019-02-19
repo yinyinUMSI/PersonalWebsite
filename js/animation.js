@@ -495,3 +495,38 @@ $(function() {
 		}
 	 });
 });
+
+
+// this part is for the skill set bars
+// if the about me title reaches to the top for the first time, then the skill set bar will move
+
+$(function() {
+	 $(window).scroll(function() {
+		var element = $("#thirdScreen");
+		var offset = element.position();
+		offset = offset.top-$(window).scrollTop();
+		if (offset < 30) {
+			console.log("closetest");
+			barMove("95%", "#squareColor1");
+			setTimeout(barMove("100%", "#squareColor2"),300);
+			setTimeout(barMove("100%", "#squareColor3"),600);
+			setTimeout(barMove("90%", "#squareColor4"),900);
+			setTimeout(barMove("90%", "#squareColor5"),1200);
+			setTimeout(barMove("90%", "#squareColor6"),1500);
+			setTimeout(barMove("90%", "#squareColor7"),1800);
+			setTimeout(barMove("90%", "#squareColor8"),2100);
+		}
+	 });
+});
+
+function barMove(numStr, selector) {$(function() {
+	anime({
+		targets: $(selector).get(0),
+		width: numStr,
+		easing: 'easeInOutQuad',
+		direction: 'alternate',
+		loop: false,
+	});
+});
+};
+

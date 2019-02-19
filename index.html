@@ -2,7 +2,7 @@
 <html>
 <head>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Assistant|Barlow|Roboto|Roboto+Condensed|Oswald|Oxygen|Quicksand" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Assistant|Barlow|Roboto|Roboto+Condensed|Oswald|Oxygen|Quicksand|Marck+Script" rel="stylesheet">
     <link href="./CSS/firstPage.css" rel="stylesheet" type="text/css">
     <link href="./CSS/secondPage.css" rel="stylesheet" type="text/css">
     <link href="./CSS/thirdPage.css" rel="stylesheet" type="text/css">
@@ -19,7 +19,7 @@
     <title>Yin Yin Portfolio</title>
 </head>
 
-<body>
+<body style="overflow-x: hidden;">
 	<!--The first screen-->
 	<div id="firstScreen">
 		<div class="navDiv">
@@ -44,7 +44,7 @@
 				<p class="pTitle">University of Michigan | MSI | UX | class of 2020</p>
 				</div>
 				<button><a href="mailto:yinyin@umich.edu?subject=We%20would%20like%20to%20offer%20you%20an%20opportunity.">Contact by Email</a></button>
-				<button><a href="mailto:yinyin@umich.edu?subject=We%20would%20like%20to%20offer%20you%20an%20opportunity.">See my Resume</a></button>
+				<button><a href="img/ResumeYinYin.pdf">See my Resume</a></button>
 			</div>
 			<iframe src="firstScreenAnimation/p5Animation.html" allowtransparency="true" scrolling="no">
 			</iframe>
@@ -175,83 +175,14 @@
 				</div> -->
 			</div>
 			</div>
-			
-		
-			
-			<div class="imgCover" id="imgCover3">
-				<div class="dw3 dw"><img src="img/sunset.jpg"><h2>.......</h2></div><div class="cover" id="cover3"></div>
-			</div>
-			<div class="imgCover" id="imgCover4">
-				<div class="dw4 dw"><img src="img/P4Cover.jpg">
-					<h2>The best age of a DJ</h2>
-				</div>
-				<div class="cover" id="cover4">
-					<ul>
-						<li>Python</li>
-						<li>PostgreSQL</li>
-						<li>Seaborn</li>
-						<li>Matplotlib</li>
-						<li>Pandas</li>
-						<li>Numpy</li>
-					</ul>
-				</div>
-			</div>
-			<div class="imgCover" id="imgCover5">
-				<div class="dw5 dw"><img src="img/sunset.jpg"><h2>Code For Fun</h2></div><div class="cover" id="cover5">
-				</div>
-				<div class="cover" id="cover4">
-					<ul>
-						<li>Processing</li>
-					</ul>
-				</div>
-			</div>
-			<a href="https://medium.com/@yinyin_99980" target="_blank">
-			<div class="imgCover" id="imgCover6">
-				<div class="dw6 dw"><img src="img/P6Cover.png">
-					<h2>APP Analysis & Other writings</h2>
-				</div>
-				<div class="cover" id="cover6">
-					<ul>
-						<li>App Analysis</li>
-						<li>Learning blogs</li>
-					</ul>
-				</div>
-			</div>
-			</a>
-			<div class="imgCover" id="imgCover7">
-				<div class="dw7 dw"><img src="img/P7Cover.png">
-					<h2>[Ongoing] Personal Website</h2>
-				</div>
-				<div class="cover" id="cover7">
-					<ul>
-						<li>HTML</li>
-						<li>CSS</li>
-						<li>JS</li>
-						<li>jQuery</li>
-						<li>Anime.js</li>
-					</ul>
-				</div>
-			</div>
-			<div class="imgCover" id="imgCover8">
-				<div class="dw8 dw">
-					<img src="img/P8Cover.png">
-					<h2>[Ongoing] Catholic Church Online Assessment Tool</h2>
-				</div>
-				<div class="cover" id="cover8">
-					<ul>
-						<li>Needs Assessment</li>
-						<li>Usability Test</li>
-						<li>Prototyping</li>
-					</ul>
-				</div>
-			</div>	
+			<div class="clear"></div>
 		</div>				
 	</div>
 
 	<div id="thirdScreen">
 		<div class="title2">
 			<div class="titleDeco2"></div>
-			<h1 class="titleScreen"> About  Me </h1>
+			<h1 class="titleScreen" id="titleAboutMe"> About  Me </h1>
 			<div class="titleDeco2"></div>
 		</div>
 		<div class="illustrUnder">
@@ -263,121 +194,87 @@
 		</div>
 		<div class="gridWrapper">
 			<div class="skillGrid">
-				<div class="animationOne">
-					<div class="animationTitle">HTML/CSS/JS</div>
+				<div class="animationTitleGroup">
+				<ul>
+					<li class="animationTitle">HTML/CSS/JS</li>
+					<li class="animationTitle">User Centered Design</li>
+					<li class="animationTitle">JQuery</li>
+					<li class="animationTitle">User Research</li>
+					<li class="animationTitle">C/C++</li>
+					<li class="animationTitle">Needs Assessment</li>
+					<li class="animationTitle">Python</li>
+					<li class="animationTitle">Usability Test</li>
+				</ul>
+				</div>
+				<div class="animationGroup">
+					<div class="squareWrapper">
 					<div class="squareGrey"><div class="squareColor squareColor1" id="squareColor1"></div></div>
-				</div>
+					</div>
 
-				<div class="animationOne">
-					<div class="animationTitle special">User Centered Design</div>
+					<div class="squareWrapper">
 					<div class="squareGrey specialG"><div class="squareColor squareColor1" id="squareColor2"></div></div>
-				</div>
+					</div>
 
-				<div class="animationOne">
-					<div class="animationTitle">JQuery</div>
-					<div class="squareGrey"><div class="squareColor squareColor2" id="squareColor3"></div></div>
-				</div>
+					<div class="squareWrapper">
+					<div class="squareGrey specialG"><div class="squareColor squareColor1" id="squareColor3"></div></div>
+					</div>
 
-				<div class="animationOne">
-					<div class="animationTitle special">User Research</div>
+					<div class="squareWrapper">
 					<div class="squareGrey specialG"><div class="squareColor squareColor2 " id="squareColor4"></div></div>
-				</div>
+					</div>
 
-				<div class="animationOne">
-					<div class="animationTitle">C/C++</div>
+					<div class="squareWrapper">
 					<div class="squareGrey "><div class="squareColor squareColor3" id="squareColor5"></div></div>
-				</div>
+					</div>
 
-				<div class="animationOne">
-					<div class="animationTitle special">Needs Assessment</div>
+					<div class="squareWrapper">
 					<div class="squareGrey specialG"><div class="squareColor squareColor3" id="squareColor6"></div></div>
-				</div>
+					</div>
 
-				<div class="animationOne">
-					<div class="animationTitle">Python</div>
+					<div class="squareWrapper">
 					<div class="squareGrey"><div class="squareColor squareColor4" id="squareColor7"></div></div>
-				</div>
+					</div>
 
-				<div class="animationOne">
-					<div class="animationTitle special">Usability Test</div>
+					<div class="squareWrapper">
 					<div class="squareGrey specialG"><div class="squareColor squareColor4" id="squareColor8"></div></div>
+					</div>
 				</div>
 			</div>
 			<div class="timeGrid">
 				<div class="timePart">
+					<img src="icon/education.png">
 					<i class="fas fa-circle"></i>	
 					<p class="pTitle">Dalian University of Technology</p>
 					<p class="pContent">Computer Science | Bachelor</p>
 					<p class="pContent">Class of 2017</p>
 				</div>
 				<div class="timePart">
+					<img src="icon/work.png">
 					<i class="fas fa-circle"></i>
-					<p class="pTitle">Product Manager Intern</p>
-					<p class="pContent">Brand Advertising Group | AUTOHOME</p>
+					<p class="pTitle">Product Designer Intern</p>
+					<p class="pContent">Brand Advertising Group | Autohome.Inc</p>
 					<p class="pContent">2016.11~2017.4</p>
 				</div>
 				<div class="timePart">
+					<img src="icon/education.png">
 					<i class="fas fa-circle"></i>
 					<p class="pTitle">University of Michigan</p>
 					<p class="pContent">Science of Information | Master</p>
 					<p class="pContent">Class of 2020</p>
 				</div>
+				<div class="timePart"  style="border-color:#312F35;">
+					<img src="icon/work.png">
+					<i class="fas fa-circle"></i>
+					<p class="pTitle">Research Assistant</p>
+					<p class="pContent">Prof. Romero's Research Team </p>
+					<p class="pContent">University of Michigan | School of Inforamtion</p>
+				</div>
+				
 <!-- 限定高度后为什么里面的文字没有把高度撑起来 -->
 			</div>
-			<div class="timeP4">
-				
-			</div>
 
 		</div>
-		</div>
-		<div>
-			<h3>Skill Set</h3>
-			<div class="skillSet">
-				<div class="animationOne">
-					<div class="animationTitle">HTML/CSS/JS</div>
-					<div class="squareGrey"><div class="squareColor squareColor1" id="squareColor1"></div></div>
-				</div>
-
-				<div class="animationOne">
-					<div class="animationTitle special">User Centered Design</div>
-					<div class="squareGrey specialG"><div class="squareColor squareColor1" id="squareColor2"></div></div>
-				</div>
-
-				<div class="animationOne">
-					<div class="animationTitle">JQuery</div>
-					<div class="squareGrey"><div class="squareColor squareColor2" id="squareColor3"></div></div>
-				</div>
-
-				<div class="animationOne">
-					<div class="animationTitle special">User Research</div>
-					<div class="squareGrey specialG"><div class="squareColor squareColor2 " id="squareColor4"></div></div>
-				</div>
-
-				<div class="animationOne">
-					<div class="animationTitle">C/C++</div>
-					<div class="squareGrey "><div class="squareColor squareColor3" id="squareColor5"></div></div>
-				</div>
-
-				<div class="animationOne">
-					<div class="animationTitle special">Needs Assessment</div>
-					<div class="squareGrey specialG"><div class="squareColor squareColor3" id="squareColor6"></div></div>
-				</div>
-
-				<div class="animationOne">
-					<div class="animationTitle">Python</div>
-					<div class="squareGrey"><div class="squareColor squareColor4" id="squareColor7"></div></div>
-				</div>
-
-				<div class="animationOne">
-					<div class="animationTitle special">Usability Test</div>
-					<div class="squareGrey specialG"><div class="squareColor squareColor4" id="squareColor8"></div></div>
-				</div>
-			</div>
-		</div>
-		<div class="secondButton">
-			<button> <a href="img/ResumeYinYin.pdf">See my Resume</a></button>
-		</div>
-		
+		</div>		
 	</div>
 
 	<div id="fourthScreen">
@@ -386,38 +283,44 @@
 			<h1 class="titleScreen"> CONTACT </h1>
 			<div class="titleDeco2"></div>
 		</div>
-		<blockquote cite="http://example.com/facts">
-			<p>One day you'll leave this world behind, so live a life you will remember.</p>
-		</blockquote>
 		<div class="contactInfo">
 			<div class="contactPic">
 				<img src="img/myPicture.jpg">
 			</div>
 			<div class="profWords">
-				<p>I’m a passionate non-academic coder. I always try to create aesthetics with code. Besides front-end development and UX design, I did a lot in creative coding with Processing and Arduino. I like traveling, drawing, tasting different food and making friends. 
+				<p>I’m a passionate coder trying to create aesthetics with code. Besides front-end development and UX design, I did a lot in creative coding with Processing and Arduino. I like traveling, drawing, tasting different food and making friends. 
 				</p>
 				<p>I want to become a UX engineer, and I'm working hard to pursue my goal. I know it's hard to launch a career, but I'll jump in with no fear of failure.
 				</p>
-				<p>The picture was taken in Brighton this winter break, a nice and cozy small town in Britain. It reminds me of my hometown in China, which has a very similar scenery and all my sweet memories. 
+				<p>Contact me by email and follow me on SNS. Let's talk about life and dream.
 				</p>
-				<p>Send an email to me. Let's talk about life and dream.
-				</p>
-				<div>
-				<p style="text-align:center;"><i class="far fa-envelope" style="margin: 15px 10px auto auto; font-size: 16px"></i>yinyin@umich.edu
-				</p>
-				</div>
 			</div>
 		</div>
-		<div class="contactIcons">
-			<a href="https://github.com/yinyinUMSI" target="_blank" style="color:rgba(80,80,80,0.8);"><i class="fab fa-github"></i>
-			<a href="https://www.linkedin.com/in/yin-yin-961417115/" target="_blank" style="color:rgba(80,80,80,0.8);"><i class="fab fa-linkedin"></i></a>
-			<a href="https://www.facebook.com/profile.php?id=100013085430979" target="_blank" style="color:rgba(80,80,80,0.8);"><i class="fab fa-facebook-square"></i></a>
-			<a href="https://medium.com/@yinyin_99980" target="_blank" style="color:rgba(80,80,80,0.8);"><i class="fab fa-medium"></i></a>
+		<div class="pinkFootage">
+			<div class="contactIcons">
+				<!-- <a href="https://github.com/yinyinUMSI" target="_blank" ><i id = "github" class="fab fa-github"></i> -->
+				<i id = "github" class="fab fa-github"></i>
+				<i id = "linkedin" class="fab fa-linkedin"></i>
+				<i id = "facebook" class="fab fa-facebook-square"></i>
+				<i id = "medium" class="fab fa-medium"></i>
+			</div>	
+				<!-- <a href="https://www.linkedin.com/in/yin-yin-961417115/" target="_blank" ><i class="fab fa-linkedin"></i></a> -->
+				<!-- <a href="https://www.facebook.com/profile.php?id=100013085430979" target="_blank"><i class="fab fa-facebook-square"></i></a> -->
+			<div class="contactER">
+				<div class="emailGroup">
+				<a href="mailto:yinyin@umich.edu?subject=Say%20Hello." target="_blank"><i class="fas fa-envelope">
+				</i><span>yinyin@umich.edu</span></a>
+				</div>
+				<div class="resumeGroup">
+					<i id = "resume" class="fas fa-address-card"></i><span>Resume</span>
+				</div>
+				<!-- <a href="img/ResumeYinYin.pdf" target="_blank"><i class="fas fa-address-card"></i>Resume</a> -->
+			</div>
 		</div>
-		<div class="footage"> 
-			<span>Designed & coded by Yin Yin. All rights reserved.</span>
+		<div class="footWords">
+			<p>One day you'll leave this world behind, so live a life you will remember.</p>
+			<p>Designed & coded by Yin Yin.</p>
 		</div>
-
 	</div>
 </body>
 
