@@ -6,6 +6,7 @@ $(function() {
 		$("iframe").css('height',((window.innerHeight)-70).toString()+"px");
 		$("iframe").css('width',(window.innerWidth-20).toString()+"px");
 		$("#myLogo").css('margin-right',(window.innerWidth-530).toString()+"px");
+		$("#myLogoPro").css('margin-right',(window.innerWidth-530).toString()+"px");
 		$(".navDiv").css('width',(window.innerWidth).toString()+"px");
 		// $("#secondScreen").css('height',window.innerHeight.toString()+"px");
 		// $("#thirdScreen").css('height',window.innerHeight.toString()+"px");
@@ -31,6 +32,7 @@ $(function() {
 	$("iframe").css('height',((window.innerHeight)-70).toString()+"px");
 	$("iframe").css('width',(window.innerWidth-20).toString()+"px");
 	$("#myLogo").css('margin-right',(window.innerWidth-530).toString()+"px");
+	$("#myLogoPro").css('margin-right',(window.innerWidth-530).toString()+"px");
 	$(".navDiv").css('width',(window.innerWidth).toString()+"px");
 	// $("#secondScreen").css('width',window.innerWidth.toString()+"px");
 	// $("#thirdScreen").css('width',window.innerWidth.toString()+"px");

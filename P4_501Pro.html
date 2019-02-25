@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Assistant|Barlow|Roboto|Roboto+Condensed|Oswald|Oxygen|Quicksand|Marck+Script|Montserrat|Bree+Serif|Nanum+Gothic|Muli" rel="stylesheet">
+    <link href="CSS/project.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js_src/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/screenHeight.js"></script><!-- 因为放在前面就可以用前面文件的变量吗 -->
+    <script type="text/javascript" src="js/goTo.js"></script>
+    <script src="js_src/anime.min.js"></script>
+    <script src="js/animation.js"></script>
+    <!-- <link rel="bookmark"  type="image/x-icon"  href="favicon.ico"/> -->
+    <link rel="shortcut icon" href="icon/titleicon.ico">
+    <title>MARI Contextual Inquiry</title>
+</head>
+
+<body>
+    <div class="nav">
+        <img src="icon/myLogo.png" id="myLogoPro">
+        <div class="navTab" id="portfolioPagePro"><a href="index.html#secondScreen">Portfolio</a></div>
+        <div class="navTab" id="aboutMePagePro"><a href="index.html#thirdScreen">About me</a></div>
+        <div class="navTab" id="contactPagePro"><a href="index.html#fourthScreen">Contact</a></div>
+    </div>
+    <div class="wholeStuff">
+        <div class="upperPart">
+            <h1> Improve the referral working process of a health care provider</h1>
+            <p class="explanation">This is a group project working with a psychology institute, which is consisted of three independent clinics that collect the referral information in different ways. The central office taking charge of making marketing strategies and reaching out to referrals want to make the referral data into a useful format.
+            </p>
+            <ul class="skills">
+                <li>User research</li>
+                <li>qualitative data analysis</li>
+                <li>Interview</li>
+            </ul>
+        </div>
+
+        <div class="wholeContent">
+            <h2>Define the problem</h2>
+            <p>After the initial meeting with the Marketing Associate who initialize the project, we define the problem as: <strong>There is not a centralized way to organize the referral data coming in from three clinics, which prevent our client from using them for marketing purpose.</strong>
+            </p>
+            <img class="contentImg" src="P4_img/initialProblem.png" style="width: 50%;">
+
+            <h2>Interview</h2>
+            <p>We interviewed seven stakeholders in the institute. Three of them are intake person who collect the referrals in the clinics. Two are the person who use referrals to reach out to them. Two of them are marketing person who intend to use the data to do marketing. I acted as a interviewer in two interviews and a notetaker in four.
+            </p>
+            <p>Through the interview, we get to know that they were using a questionnaire system Tool A to collect data and use the imbedded data analysis tools to make marketing strategies and the reach-out person print out and keep a physical copy of the referral information to reach out to them. 
+            </p>
+            <p>The referral collection is a minor part in the whole intaking process and only a few patients provide valid referral information that can be used to reach out directly. Some of them failed to use Tool A efficiently as expected. They have a “centralized way” to store the data, but the process of using the data is inefficient.
+            </p>
+            <p>The workflow of intaking in three clinics are shown below:</p>
+            <div class="imgGroupWrapper">
+                <ul class="imgGroup">
+                    <li><img class="contentImg" src="P4_img/workflow1.png" width="200px"></li>
+                    <li><img class="contentImg" src="P4_img/workflow2.png" width="200px"></li>
+                    <li><img class="contentImg" src="P4_img/workflow3.png" width="200px"></li>
+                </ul>
+            </div>
+            <h2>Qualitative data analysis</h2>
+            <p>After every interview, we debrief what we get and produce some insights. We collect and sort them into small groups and then group those to a larger group. After three layers, the main issues surface which fell into three categories: the tool’s problems, the workflow gaps and administrative problems.
+            </p>
+            <div class="imgGroupWrapper">
+                <ul class="imgGroup">
+                    <li><img class="contentImg" src="P4_img/P1_display1.JPG" width="403px"></li>
+                    <li><img class="contentImg" src="P4_img/P1_display2.jpg" width="404px"></li>
+                    <img src="P4_img/affinityResult.png" width="370px" style="float:right;" >
+                    <li><img class="contentImg" src="P4_img/P1_display3.jpg" width="404px"></li>
+                    <li><img class="contentImg" src="P4_img/P1_display4.jpg" width="404px"></li>
+                </ul>
+            </div>
+
+            <h2>Refine the problem</h2>
+            <p>We kept asking, what is the most important issue? By solving which problem can we improved their referral works most? <strong>We redefine the problem as the current system they were using to collect referral information didn’t support their referral work in an expected way.</strong>
+            </p>
+
+            <h2>Brainstorming</h2>
+            <p>Before we start brainstorming for solutions, we set up criterias to narrow down and limit our solution scope. Based on our clients’ direct requirement and what we got from the interviews, we set up two columns which are “Must have” and “Good to have”.
+            </p>
+            <img src="P4_img/GMHave.jpg" width="90%">
+            <p>Our first thought was applying a new system to referral working process, but we found although it could solve the problem essentially, it will added cost on purchasing and maintaining the system, as well as training the officers. 
+            </p>
+            <p>The centralized and organizing work can be down by extra manpower. The MARI A.Rackham Institute is based on University of Michigan, which has limited on-campus positions contracting to a large student population. Our client can hire a student intern to organize the data.
+            </p>
+
+            <h2>Proposal</h2>
+            <p>We proposed to our clients with a primary solution and a secondary solution.
+            </p>
+            <li class="contentLi"><strong>The primary solution is hiring a student intern to transfer the data in the system into a format that will greatly support their current referral working process.</strong>This can be implemented imediately and have instant effects on referral work.
+            </li>
+             <li class="contentLi"><strong>The secondary one is redeveloping Qualtrics by using API to add required features and functions.</strong>This may take longer time and require the cost of developing and maintaining.
+            </li>
+            <img src="P4_img/proposal.jpg" width="90%">
+
+            <h2>Reflection</h2>
+            <p>Looking back to the project, I feel I will do differently in following aspects:</p>
+            <li class="contentLi">Asking more open-ended questions in interviews and keep asking why to dig deep into their answers that seems obscure at first.
+            </li>
+            <li class="contentLi">Using project management tools to plan ahead and set up standing meetings for the group.
+            </li>
+            <li class="contentLi">Grouping notes in Affinity wall according to their relations not the process in which they belong to.
+            </li>
+            <li class="contentLi">Be more confident in presentations.</li>  
+        </div>
+    </div>
+    <div class="navBottom">
+        <div class="toProjectOne lastProject">
+            <i class="fas fa-chevron-left"></i>
+            <span>Save To Save</span>
+        </div>
+         <div class="toProjectFive nextProject">
+            <span>Eisenhower Matrix Reminder</span>
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+
+    <div class="blackFootage">
+            <div class="contactIcons">
+                <i id = "github" class="fab fa-github"></i>
+                <i id = "linkedin" class="fab fa-linkedin"></i>
+                <i id = "facebook" class="fab fa-facebook-square"></i>
+                <i id = "medium" class="fab fa-medium"></i>
+            </div>  
+            <div class="contactER">
+                <div class="emailGroup">
+                <a href="mailto:yinyin@umich.edu?subject=Say%20Hello." target="_blank"><i class="fas fa-envelope">
+                </i><span>yinyin@umich.edu</span></a>
+                </div>
+                <div class="resumeGroup">
+                    <i id = "resume" class="fas fa-address-card"></i><span>Resume</span>
+                </div>
+            </div>
+        </div>
+        <div class="footWords">
+            <p>One day you'll leave this world behind, so live a life you will remember.</p>
+            <p>Designed & coded by Yin Yin.</p>
+        </div>
+    </div>
+
+</body>
+</html>
+

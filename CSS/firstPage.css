@@ -77,7 +77,8 @@ body {
 	font-size: 20px;
 	color: #F60853;
 	margin: 3px;
-	font-family: 'Roboto',sans-serif;
+	font-family: 'Montserrat',sans-serif;
+	font-weight: bolder;
 }
 
 .homeContentContainer {
@@ -126,7 +127,7 @@ body {
 	color: #F60853;
 	border: 2px solid #F60853; 
 	border-radius: 6px;	
-	margin: 10px 11px;
+	margin: 10px 22px;
 }
 .homeContent > button:hover {
 	background-color: #F60853;	
@@ -135,9 +136,6 @@ body {
 .homeContent > button > a:hover {
 	color: #DFE6E9;
 }
-
-
-
 
 .titleDeco2 {
 	border-color: 
@@ -166,7 +164,8 @@ iframe {
 	margin: 0;
 }
 .pTitle {
-	font-family:'Roboto',sans-serif;
+	font-family:'Montserrat',sans-serif;
+	font-weight: bolder;
 }
 .contactGroup {
 	position: absolute;
