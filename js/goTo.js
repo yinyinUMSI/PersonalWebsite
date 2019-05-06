@@ -51,42 +51,29 @@ $(function() {
 		window.open("img/ResumeYinYin.pdf",'_blank');
 	});
 	// to project one
-	$('.toProjectOne').on('click',function() {
-		window.location = "P1_SaveSave.html";
+	$('#imgCover1,.toProjectOne').on('click',function() {
+		window.location = "P6_Catholic.html";
 	});
-	$('#dw1').on('click',function() {
-		window.location = "P1_SaveSave.html";
-	});
+
 	// to project two
-	$('.toProjectTwo').on('click',function() {
+	$('#imgCover2,.toProjectTwo').on('click',function() {
 		window.location = "P2_CNBC.html";
 	});
-	$('#dw2').on('click',function() {
-		window.location = "P2_CNBC.html";
+	
+	// to project three
+	$('#imgCover3,.toProjectThree').on('click',function() {
+		window.location = "P7_520Graphic.html";
 	});
-	$('.toProjectThree').on('click',function() {
-		window.location = "P3_Processing.html";
-	});
-	$('#dw3').on('click',function() {
-		window.location = "P3_Processing.html";
-	});
-	$('.toProjectFour').on('click',function() {
-		window.location = "P4_501Pro.html";
-	});
-	$('#dw4').on('click',function() {
-		window.location = "P4_501Pro.html";
-	});
-	$('.toProjectFive').on('click',function() {
+
+	//to project four
+	$('#imgCover4,.toProjectFour').on('click',function() {
 		window.location = "P5_UIMatrix.html";
 	});
-	$('#dw5').on('click',function() {
-		window.location = "P5_UIMatrix.html";
+
+	//to project five
+	$('#imgCover5,.toProjectFive').on('click',function() {
+		window.location = "P4_501Pro.html";
 	});
-	$('.toProjectSix').on('click',function() {
-		window.location = "P6_Catholic.html";
-	});
-	$('#dw6').on('click',function() {
-		window.location = "P6_Catholic.html";
-	});
+	
 });
 

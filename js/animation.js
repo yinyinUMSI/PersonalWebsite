@@ -1,4 +1,3 @@
-
 //----------------following code controls the contact icons on the side
 //when loaded, mouse moves in/ out and click
 $(function() {
@@ -124,3 +123,42 @@ function barMove(numStr, selector) {$(function() {
 });
 };
 
+// this part is for the project mockups
+// Mouse over, the cover will expand and show more words
+
+$(function() {
+	$("#mask1").hover(coverExpand,coverContract);
+	$("#mask2").hover(coverExpand,coverContract);
+	$("#mask3").hover(coverExpand,coverContract);
+	$("#mask4").hover(coverExpand,coverContract);
+	$("#mask5").hover(coverExpand,coverContract);
+});
+
+
+
+function coverExpand() {
+	var element = $(this).get(0);
+	anime({
+		targets: element,
+		height: '100%',
+		easing: 'easeInQuad',
+		loop: false,
+		duration: 100,
+	});
+	$(this).children(":last").css("display","initial");
+	console.log("mousein");
+}
+
+function coverContract() {
+	var element = $(this).get(0);
+	anime({
+		targets: element,
+		height: '40%',
+		easing: 'easeOutQuad',
+		loop: false,
+		duration: 100,
+	});	
+	$(this).children(":last").css("display","none");
+	console.log("mouseout");
+
+}

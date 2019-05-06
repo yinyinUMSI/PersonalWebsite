@@ -109,6 +109,12 @@ h2 {
 	font-family: 'Muli',sans-serif;
 }
 
+h3 {
+	color: rgba(80,80,80);
+	font-family: 'Muli',sans-serif;
+	font-size:16px;
+}
+
 .note a {
 	text-decoration-color: rgba(246,8,83,0.9);
 	color:rgba(246,8,83,0.9);
@@ -120,6 +126,14 @@ p {
 	padding: 10px auto;
 	color: rgba(80,80,80);
 	font-family: 'Muli',sans-serif;
+}
+
+.pbold {
+	text-align:justify;
+	padding: 10px auto;
+	color: rgba(56,135,201);
+	font-family: 'Muli',sans-serif;
+	font-weight: bolder;
 }
 
 strong {
@@ -319,4 +333,30 @@ strong {
 }
 .nextProject:hover {
 	font-size: 22px;
+}
+
+.imgwNote {
+	display: grid;
+	grid-template-columns: auto 400px;
+	grid-gap: 0 40px;
+	justify-content: center;
+}
+img.phone {
+	width: 200px;
+	border: 1px solid black;
+	justify-self: end;
+}
+.gridContent {
+	align-self: center;
+}
+
+.twoImg {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 0 20px;
+	justify-content: center;
+}
+img.normal {
+	width: 600px;
+	justify-self: end;
 }

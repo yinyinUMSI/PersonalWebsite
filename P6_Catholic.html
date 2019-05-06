@@ -5,7 +5,7 @@
     <link href="https://fonts.googleapis.com/css?family=Assistant|Barlow|Roboto|Roboto+Condensed|Oswald|Oxygen|Quicksand|Marck+Script|Montserrat|Bree+Serif|Nanum+Gothic|Muli" rel="stylesheet">
     <link href="CSS/project.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="js_src/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="js/screenHeight.js"></script><!-- 因为放在前面就可以用前面文件的变量吗 -->
+    <script type="text/javascript" src="js/screenHeight.js"></script>
     <script type="text/javascript" src="js/goTo.js"></script>
     <script src="js_src/anime.min.js"></script>
     <script src="js/animation.js"></script>
@@ -23,38 +23,216 @@
     </div>
     <div class="wholeStuff">
         <div class="upperPart">
-            <h1> Catholic Social Services Online Assessment Tool for Caregivers in Washtenaw County</h1>
+            <h1> Design an Online Assessment Tool for Caregivers in Washtenaw County</h1>
             <p class="explanation">
-                This is an infoLab project working with Catholic Social Services building up an online assessment tool for caregivers who take care of older adults. 
+                This is a semester-long project working with Catholic Social Services in Washtenaw County, building up an interactive web-based assessment tool that will help caregivers determine whether older adults in their lives may need additional resources by identifying risk factors and easily make referrals to health and social services. 
             </p>
-            <p class="explanation">
-                Our project is a small part of a larger picture. The tool we are working on is going to return the directory based on another student team's research result. What we focus on is studying how users access to the resource and what the structure of the tool should be.
+            <p class="note">
+                This product is going to be launched next year onto the Catholic social Services of Washtenaw County <a href="https://csswashtenaw.org/">website</a>.
             </p>
             <ul class="skills">
-                <li>User Experience Design</li>
-                <li>User Research</li>
-                <li>Interface Design</li>
-                <li>Competitive Analysis</li>
+                <li>Prototyping</li>
+                <li>Usability Evaluation</li>
+                <li>Interview</li>
+                <li>Comparative Analysis</li>
             </ul>
         </div>
 
         <div class="wholeContent">
-            <h2>Project Scope</h2>
-            <!-- <p>At the beginning, we did the interaction map of the App for the following reasons:
-            </p> -->
-             <img class="contentImg" src="P6_img/scope.jpg" style="width: 100%;">
-            <p style="text-align:center;">.............Coming soon.............
+            <h2>Outcome</h2>
+            <p>
+                The tool works in a similar way as an online questionnaire. It asks for the signs of crisis (e.g abnormal behavior) the test taker noticed and gave the possible causes of the issue and a list of resources available. Here is a walk-through of how the assessment tool works. 
+            </p>
+            <p>
+                After user clicking the link on the client’s website, they will be navigated to the landing page of the online assessment tool. Clicking the “Let’s start” button will begin the assessment. After answering the first two filtering questions designed to understand the relationship between the test taker and the person to be assessed, they are categorized into three groups: traditional caregivers, non-traditional caregivers with close relationship, and non-traditional caregivers without close relationship. The following questions fall into three domains, some of which are only applicable to close relationships. Traditional caregivers will answer “Home domain”, “Public domain”, and “Close-relationship domain” questions. Non-traditional caregivers with close relationship will answer “Public domain” and “Close-relationship domain” questions. 
+            </p>
+            <p>    
+                At the end of the survey, it will show return all the possible cause of the issues the test taker just chose and a list of resources available in Washtenaw County. For further help, users can always tap the button below to contact to our client.
+
+            </p>
+            <img src="P6_img/workflow.png" style="width:100%"">
+
+            <p>The following is a display of the interactive prototype made by Adobe Xd, and you can try on your own via the <a href="https://xd.adobe.com/view/4d760ba0-7f29-4f64-7f3f-ba5522a2dd49-3b47/">link</a>. You may find some buttons not clickable because it's overcomplicated to add every interaction via Xd.
+            </p>
+            <p>
+                We used Sketch to create prototypes and Adobe Xd to make page transition effects. Usability test findings are incorporated in the next iteration of design. On our way to the final product, we conducted four rounds of usability test and finally came to our fourth edition. Below are some of the prototypes of our design and the reasons why we had this feature are also presented.
+            </p>
+            <h3>Landing Page:</h3>
+            <div class="imgwNote">
+                <img class="phone" src="P6_img/landingPage.png">
+                <div class="gridContent">
+                    <p>
+                        Authentication information: It’s based on our usability test result that participants wondered whether the tool is related to some kind of advertisement.
+                    </p>
+                </div>
+            </div>
+
+            <h3>Instruction Page:</h3>
+            <div class="imgwNote">
+                <img class="phone" src="P6_img/Instruction.jpg">
+                <div class="gridContent">
+                    <p>
+                        This is a design for novice user and those who are not tech-savvy. We found that participants didn’t notice some features designed for them and they felt a little nervous using a new product for the first time. An instruction will familiarize the novice users with the tool.
+
+                    </p>
+                </div>
+            </div>
+
+            <h3>Question Page:</h3>
+            <div class="imgwNote">
+                <img class="phone" src="P6_img/Question2.png">
+                <div class="gridContent">
+                    <p>
+                        Enlarge font: This is an accessibility issue we took into consideration. Our potential users will mainly be those who themselves are older adults, so it’s important to give them the option to enlarge the font.
+
+                    </p>
+                    <p>
+                        Progress bar:They want to know how far they have gone and how much was left. Participants will show impatience when they didn’t have an estimation of the progress.
+                    </p>
+                </div>
+            </div>
+
+            <h3>Result Page:</h3>
+            <div class="imgwNote">
+                <div>
+                    <img class="phone" src="P6_img/Results.png">
+                    <img class="phone" src="P6_img/ResultsExpand.png">
+                </div>
+                <div class="gridContent">
+                    <p>
+                        Tap to see the resources: Users wanted to know what was wrong with the person they did the test for and then the resources they could reach out for help.
+                    </p>
+                </div>
+            </div>
+
+            <p>
+                The project involves user interview, usability test, comparative evaluation and prototyping. After understanding the client’s requirement, we narrow down our user group based on our interview of professional and non-professional caregivers. Then we focus on non-professional caregivers, conducting interviews with them to understand how they currently get resources for care recipients. Based on our knowledge to the users, we did first round prototyping and tested with the potential users, which enable us to incorporate the correctness of issues identified to the next iteration. Below is a detailed description of how we got to the result.
             </p>
 
+
+            <h2>Project Scope</h2>
+            <p>We began this project by fully understand what's the problem the client trying to solve. What are the limitations and oportunities we have. Our client specify the target users, who are traditional caregivers (those who take care of their parents, spouse and clients) and non-traditional caregivers (those who potentially can provide some sort of help to older adults, like bus drivers and church members).</p>
+            <h3>Goals:</h3>
+                <img src="P6_img/goals.png" style="width:80%">
+            <h3>Target users and beneficiary:</h3>
+                <img src="P6_img/users.png" style="width:80%">
+
+
+            <h2>Interviews</h2>
+            <p>
+                we conducted user interview with 10 potential users in order to understand how the potential users currently find resources for care recipients and what are some functions they desire in the online assessment tool. The interviewees are professional caregivers, traditional but non-professional caregivers, and non-traditional caregivers.
+            </p>
+            <h3>Overarching questions:</h3>
+            <p>
+                We want to know how the tools can be fit into the whole process of caregivers finding resources, and the frustrations they currently have. Below are the overarching questions we hope we can get answers to after interviews.
+            </p>
+            <ul>
+                <li class="contentLi">How do caregivers find resources when they feel they need extra resources?</li>
+                <li class="contentLi">What is the process of searching resources online if they ever searched online?</li>
+                <li class="contentLi">What are the frustrations they met when trying to search for resources?</li>
+            </ul>
+            <h3>Recruitment Method:</h3>
+            <p>
+                Our contact person from CSSCW gave us two people to interview from The Oaks Adult Day Services Center. We also distributed an online survey across various Facebook Washtenaw County groups such as Dexter, Chelsea, and Whitmore Lake. Our survey asked four screening questions to determine if someone was a traditional or non-traditional caregiver: How long have you lived in Washtenaw County, Do you regularly interact with an older adult aged 65+, Do you care for an older adult on a regular basis, and Do you use the internet to search for resources, such as food, transportation, health, etc? 
+            </p>
+            <p>
+                We also went to the church to ask if they ever take care of someone and got a few positive answers. Then we conducted interview with those who are willing to be interviewed. My teammate also asked in their network and got 1 reponse.
+            </p>
+            <h3>Demographics:</h3>
+            <p>
+                The gender proportion is nearly equal among the interviewees, and their age varies from 18-35 to 65+. According to our definition, we have 5 traditional and 5 non-traditional caregivers. We have tried our best to avoid possible bias from demographics.
+            </p>
+                <img src="P6_img/demographic.png" style="width:80%">
+            <h3>Key Findings:</h3>
+            <p class="pbold"> 
+                Caregivers will either turn to someone they trust, and ask them for possible resources, or search online.
+            </p>
+            <p> 
+                The most frequently mentioned ways or getting resources are searching online and asking someone they trust, explained that it is a reliable way. 
+            </p>
+            <p class="pbold"> 
+                When searching online, all of the caregivers use google and search for the name of the resources with a specific area. They expected to find the resources that most suitable to the situation.
+            </p>
+            <p> 
+                They will input the name or category of the organization specified by the area. For example, if they want to find a psychological clinic, they will input psychological clinic Ann Arbor in the search bar. When they get the results from the search engine, they want to know the address, contact information, and most important of all, if it can solve the problems.
+            </p>
+            <p class="pbold"> 
+                The online assessment tool’s resources page should be the last stop in the search for resources.
+            </p>
+            <p> 
+                Our interviewees expressed that the last page of the online assessment tool where users are presented with a list of resources should be the last stop. This means that people don’t need to go elsewhere to find further resources. Essentially, the tool should be precise and specific to what the user needs and wants. 
+            </p>
+            <p class="pbold"> 
+                Professional caregivers are not our target users.
+            <p> 
+                Two of our interviewees are professional caregivers. They are experienced in terms of identifying the possible issues. We found that they had directories and handbooks of the available resources nearby. They don't need assessments, but will directly go to the directory to find resources.
+            </p>
+            <h2>Persona</h2>
+            <p>
+                Based on our understanding of users via interviews, we generated three personas for professional caregiver, traditional caregiver and non-traditional caregiver. Since we found professional caregivers are not our target users, we mainly focus on the other two personas. Although our users age varies, we want to focus on aged people, since if they can easily use the product, everyone in our user group should be able to use it. Moreover, we found that people younger than 35 have less interactions with older adults than people who are 35+.
+            </p>
+
+            <div class="twoImg">
+                <img class="normal" src="P6_img/persona1.jpg">
+                <img class="normal" src="P6_img/persona2.jpg">
+            </div>
+
+            <h2>Usability Test</h2>
+            <p>We followed the best practice of agile development, which suggests testing even when the prototype is not perfect. Our research goal is to get users' feedback of how easy or difficult they felt doing the evaluation with the tool. We were able to conduct four rounds of usability tests and applied the findings in the next iteration. </p>
+            <h3>Goals:</h3>
+            <p>How easy or difficult can the participants use the tool to do assessment for a care recipient?</p>
+            <p>How is the accessibility of the design in terms of the aged population?</p>
+            <h3>Method:</h3>
+            <p>
+                Navigate from the landing page to the result page, finishing the questionnaire.We provide the scenario which is that you are doing the test for someone in your community you met once a week for she lost a lot of weight these days.
+            </p>
+            <p>
+                In order to understand the participants, we have pre-test questions asking for demographics. The post-test questions were designed to instruct participants to reflect their experience of conducting the tasks, so that we can know their experience from the reflective level. The pre-test and post-test questions can be checked <a href="https://docs.google.com/document/d/1EvLvi7dRYaDpHwWKqfaZxVudEzUi9YWoayawdbf2Nx8/edit?usp=sharing">here</a>.
+            </p>
+            <h3>Key Finidngs:</h3>
+            <p class="pbold">Most participants didn’t notice the enlarge font feature.</p>
+            <p>
+                Although the enlarge font feature is available, most of participants failed to notice and some even didn’t know what is it for. As a result, a brief instruction of how to use the tool was incorporated in the next iteration.
+            </p>
+            <p class="pbold">The tool need to earn the trust from the users.</p>
+            <p>
+                When we asked them what did you think of the tool, they doubted that whether it is some kind of advertisements. Authentification information should be provided at the beginning of the test to build up trust.
+            </p>
+            <p class="pbold">Participants want to know how far they have gone through the test.</p>
+            <p>
+                They asked how many questions left during the test. Although there were only a couple of pages, we still felt the necessity of having progress bar in every pages.
+            </p>
+            <p class="pbold">It was more convincing when the explanation of how the issue were generated by answering the questions.</p>
+            <p>
+                Participants asked how the results were generated, so a brief explanation of why these issues were brought up was necessary. 
+            </p>
+
+            <h2>Gallery</h2>
+                <img src="P6_img/gallery1.jpg" style="width: 80%">
+                <img src="P6_img/gallery2.jpg" style="width: 80%">
+
+            <h2>Further Suggestions</h2>
+            <p class="pbold">Some questions need to have explanations to specify the vague concept. </p>
+            <p>
+                For example, one of the questions asking whether that person take more drugs than usual. Some people express their confusion on how much more should be considered a problem.
+            </p>
+            <p class="pbold">Display the options the user just chosen on the result page.</p>
+            <p>
+                Aged people may have difficulty in retrieving what they chose just now. Having the chosen options shown and explanations, which tells them why the system gives the following resources,  will improve the reliability of the tool.
+            </p>
+            <p class="pbold">Give the assessment results and the resources corresponding to those issues rather than instructing users to contact CSS.</p>
+            <p>
+                We learnt from the interviews that users expect to get the possible issues and resources when they use this tool. It makes no sense letting users finish the assessment process first and then ask help from the client.
+            </p>
         </div>
     </div>
     <div class="navBottom">
             <div class="toProjectTwo lastProject">
-                <i class="fas fa-chevron-left"></i>
-                <span>CNBC Project</span>
-            </div>
-             <div class="toProjectThree nextProject">
-                <span>Creative Coding</span>
+               <!--  <i class="fas fa-chevron-left"></i>
+                <span>CNBC Project</span> -->
+            </div> 
+             <div class="toProjectTwo nextProject">
+                <span>CNBC App Project</span>
                 <i class="fas fa-chevron-right"></i>
             </div>
         </div>

@@ -43,6 +43,11 @@
 .displayWorks {
 	width: 95%;
 	margin: 0 auto;
+	display: grid;
+	justify-content: center;
+	grid-gap: 60px;
+	grid-template-columns: minmax(300px,500px) minmax(300px,500px);
+	grid-template-rows: auto auto auto;
 	/*height: 1376px;*/
 }
 .imgCover {
@@ -53,31 +58,35 @@
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+	cursor: pointer;
 }
-.leftCol {
-	float: left;
-	width: 50%;
-	font-size: 0px;
+
+.mask {
+	position: absolute;
+	bottom: 0;
+	height: 40%;
+	width: 100%;
+	background-color: rgba(246,8,83,0.6);
 }
+
+.hidewhenContract {
+	font-size: 12px;
+	width: 70%;
+	word-wrap: break-word;
+	color: #DFE6E9;
+	font-family: 'Roboto',sans-serif;
+	margin: 20px;
+	text-align: left;
+}
+
 .dw {
 	padding: 0;
-	margin: 10px;
+	margin: 0px;
 	font-size: 0px;
 	cursor: pointer;
 }
-.rightCol {
-	float: right;
-	width: 50%;
-}
 
-.displayWorks :after {
-	clear:both;
-	content:'.';
-	display:block;
-	width: 0;
-	height: 0;
-	visibility:hidden;
-}
+
 
 .clear {
 	clear:both; 
@@ -90,35 +99,50 @@
 	font-size: 12px;
 	width: 100%;
 	word-wrap: break-word;
-	color: #312F35;
-	position: absolute;
-	bottom: 80px;
+	color: #DFE6E9;
+	/*bottom: 80px;*/
 	font-family: 'Roboto',sans-serif;
 }
 
 .coverWords h2 {
-	width: 80%;
-	line-height: 1.5em;
+	width: 90%;
+	line-height: 1.2em;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
-	margin: 0 40px;
-	text-align: left;
-	padding: 6px 0;
-	padding-left: 9px;
-	border-left: 4px solid #F60853;
+	margin: 10px auto;
+	text-align: center;
+	padding: 0 5px;
+	/*border-left: 4px solid #F60853;*/
 }
-.coverArrow {
+/*.coverArrow {
 	position: absolute;
 	bottom: 8%;
 	right: 5%;
 	font-size: 24px;
 	color: #F60853;
 	cursor: pointer;
-}
-.coverArrow i {
+}*/
+/*.coverArrow i {
 	text-shadow: 2px 2px 8px rgba(100,100,100,20);
 }
 .coverArrow i:hover {
 	font-size: 30px;
 
+}*/
+.skills {
+	text-align: center;
+	margin: 10px 0;
+	padding: 0;
+}
+.skills li {
+	font-size: 10px;
+	line-height: 24px;
+	display: inline;
+	text-align: center;
+	border-radius: 2px;
+	border: 1px solid #DFE6E9;
+	background-color: rgba(0,0,0,0);
+	padding: 2px 5px;
+	font-family: 'Quicksand',sans-serif;
+	color: #DFE6E9;
 }
