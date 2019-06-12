@@ -34,6 +34,9 @@ $(function() {
 		$("html,body").animate({scrollTop: $("#firstScreen").offset().top}, 800);
 	});
 
+	$("#clickToResume").on('click', function() {
+		window.open("img/ResumeYinYin.pdf",'_blank');
+	});
 
 	$("#github").on('click', function() {
 		window.open("https://github.com/yinyinUMSI",'_blank');

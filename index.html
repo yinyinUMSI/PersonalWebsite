@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Assistant|Barlow|Roboto|Roboto+Condensed|Oswald|Oxygen|Quicksand|Marck+Script|Montserrat" rel="stylesheet">
@@ -8,11 +8,11 @@
     <link href="./CSS/thirdPage.css" rel="stylesheet" type="text/css">
     <link href="./CSS/fourthPage.css" rel="stylesheet" type="text/css">
     <!-- <link href="css/mutualStyle.css" rel="stylesheet" type="text/css"> -->   
-    <script type="text/javascript" src="js_src/jquery-3.3.1.min.js"></script>
+    <script src="js_src/jquery-3.3.1.min.js"></script>
     <script src="js/goTo.js"></script>
     <script src="js_src/anime.min.js"></script>
     <script src="js/animation.js"></script>
-    <script type="text/javascript" src="js/screenHeight.js"></script> <!-- 因为放在前面就可以用前面文件的变量吗 -->
+    <script src="js/screenHeight.js"></script> <!-- 因为放在前面就可以用前面文件的变量吗 -->
     <!-- <script type="text/javascript" src="js/basic.js"></script> -->
     <!-- <link rel="bookmark"  type="image/x-icon"  href="favicon.ico"/> -->
     <link rel="shortcut icon" href="icon/titleicon.ico">
@@ -43,15 +43,16 @@
 				<p class="pTitle">A UX Designer & Front-end Developer</p>
 				<p class="pTitle">University of Michigan | MSI | UX | class of 2020</p>
 				</div>
-				<button><a href="mailto:yinyin@umich.edu?subject=We%20would%20like%20to%20offer%20you%20an%20opportunity.">Contact by Email</a></button>
-				<button><a href="img/ResumeYinYin.pdf" target="_blank">See my Resume</a></button>
+				<!-- <button><a href="mailto:yinyin@umich.edu?subject=We%20would%20like%20to%20offer%20you%20an%20opportunity.">Contact by Email</a></button> -->
+				<button>Contact by Email</button> 
+				<button id='clickToResume'>See my Resume</button>
 			</div>
-			<iframe src="firstScreenAnimation/p5Animation.html" allowtransparency="true" scrolling="no">
+			<iframe src="firstScreenAnimation/p5Animation.html" style="width:200px;height:200px;">
 			</iframe>
 			<p class="notation">Landing Page Animation P5.js</p>
 			<div class="contactGroup">
 				<div class="contactIndiv" id="logoLinkedin">
-					<a href="https://www.linkedin.com/in/yin-yin-961417115/" target="_blank"><img src="icon/linkedin.png"></a>
+					<a href="https://www.linkedin.com/in/yin-yin-961417115/" target="_blank"><img src="icon/linkedin.png" alt=""></a>
 				</div>
 				<div class="contactIndiv" id="logoGithub">
 					<a href="https://github.com/yinyinUMSI" target="_blank"><img src="icon/github.png" alt=""></a>
@@ -77,7 +78,7 @@
 
 		<div class="displayWorks">
 			<!-- this is Catholic Social Services project -->
-			<div class="imgCover" id="imgCover1" alt="">
+			<div class="imgCover" id="imgCover1">
 				<div class="dw" id="dw6">
 					<img src="img/project1Cover.png" alt="project one">
 				</div>
@@ -140,7 +141,7 @@
 
 			<!-- this is web app project -->
 			<div class="imgCover" id="imgCover4">
-				<div class="dw" id="dw3">
+				<div class="dw" id="dw4">
 					<img src="img/project4Cover.png" alt="project four">
 				</div>
 				<div class="mask" id="mask4">
@@ -192,7 +193,7 @@
 		<div class="illustrUnder">
 			<div class="iconGroup"><img src="icon/group.png" alt=""><p>team-player</p></div>
 			<div class="iconGroup"><img src="icon/running.png" alt=""><p>self-motivated</p></div>
-			<div class="iconGroup"><img src="icon/flag.png" height="30px" alt=""><p>fast leaner</p></div>
+			<div class="iconGroup"><img src="icon/flag.png" height="30" alt=""><p>fast leaner</p></div>
 			<div class="iconGroup"><img src="icon/creative.png" alt=""><p>goal-oriented</p></div>
 			<div class="iconGroup"><img src="icon/coding.png" alt=""><p>CS background</p></div>
 		</div>

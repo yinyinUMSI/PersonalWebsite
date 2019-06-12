@@ -116,24 +116,24 @@ body {
 
 .homeContent > button > a {
 	text-decoration: none;
-	color: #F60853;
-	font-size: 16px;
-	font-weight: bolder;
+	color: #F60853;	
 }
 .homeContent > button {
 	height: 40px;
 	width: 160px;
 	background-color: #312F35;
 	color: #F60853;
+	font-size: 16px;
 	border: 2px solid #F60853; 
 	border-radius: 6px;	
 	margin: 10px 22px;
+	font-weight: bolder;
 }
 .homeContent > button:hover {
 	background-color: #F60853;	
 }
 
-.homeContent > button > a:hover {
+.homeContent > button:hover {
 	color: #DFE6E9;
 }
 
@@ -142,15 +142,15 @@ body {
 }
  
 iframe {
-	width: 700px;
-	height: 700px;
 	border: none;
-	display: inline;
+	display:block;
 	position: absolute;
 	bottom: 0;
 	right: 0;
 	z-index: 1;
 	margin: 0;
+	background-color: rgba(0,0,0,0);
+	overflow: hidden;
 }
 .notation {
 	font-size: 10px;

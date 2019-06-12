@@ -5,7 +5,7 @@ var dist_threshold = 150;
 
 function setup() {
   // createCanvas(windowWidth, windowHeight-50);
-  createCanvas(displayWidth, displayHeight-50);
+  createCanvas(displayWidth-400, displayHeight-300);
   MAX_NUM = floor(displayWidth/100)*floor(displayHeight/100);
   for (let i = 0; i < MAX_NUM; i++)
   {
