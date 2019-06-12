@@ -47,7 +47,6 @@ body {
 	width:100%;
 	padding:0;
 	margin:0px; 
-	/*padding: 20px;为什么这个设置padding好用而wholecontent设置margin不好用*/
 }
 .upperPart {
 	margin: 0;
