@@ -1,3 +1,15 @@
+@media only screen and (max-width: 600px) {
+  .displayWorks {
+	width: 95%;
+	margin: 0 auto;
+	display: grid;
+	justify-content: center;
+	grid-gap: 60px;
+	grid-template-columns: minmax(300px,500px) minmax(300px,500px);
+	grid-template-rows: auto auto auto;
+	/*height: 1376px;*/
+}
+}
 
 
 .title2 > h1 {

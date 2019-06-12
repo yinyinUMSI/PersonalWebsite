@@ -4,6 +4,23 @@
 /*html {
 	margin: 0;
 }*/
+
+@media only screen and (max-width: 600px) {
+  .homeContent > button {
+	height: 40px;
+	width: 240px;
+	}
+  .contactGroup {
+	position: fixed;
+	bottom: 150px;
+	left: -50px;
+	z-index: 3;
+	}
+  iframe {
+  	display: none;
+  }
+}
+
 body {
 	margin: 0;
 }
