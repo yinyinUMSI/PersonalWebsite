@@ -1,15 +1,4 @@
-@media only screen and (max-width: 600px) {
-  .displayWorks {
-	width: 95%;
-	margin: 0 auto;
-	display: grid;
-	justify-content: center;
-	grid-gap: 60px;
-	grid-template-columns: minmax(300px,500px) minmax(300px,500px);
-	grid-template-rows: auto auto auto;
-	/*height: 1376px;*/
-}
-}
+
 
 
 .title2 > h1 {
@@ -157,4 +146,15 @@
 	padding: 2px 5px;
 	font-family: 'Quicksand',sans-serif;
 	color: #DFE6E9;
+}
+
+@media (max-width: 600px) {
+  .displayWorks {
+	width: 80%;
+	margin: 0 auto;
+	display: grid;
+	justify-content: center;
+	grid-gap: 60px;
+	grid-template-columns: minmax(500px,550px);
+}
 }

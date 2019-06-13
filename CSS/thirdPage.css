@@ -1,10 +1,4 @@
-@media only screen and (max-width: 600px) {
-  .gridWrapper {
-	display: grid;
-	grid-template-columns: repeat(auto-fit,minmax(600px, 1fr));
-	grid-gap: 10px;
-	}
-}
+
 
 #thirdScreen {
 	background-color: #312F35;
@@ -155,4 +149,21 @@
 
 .ul {
 	text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .gridWrapper {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 10px;
+  }
+  .skillGrid {
+	grid-column: 1/1;	
+}
+  .timeGrid {
+	grid-column: 1/1;
+	justify-self: start;
+	padding-top: 10px;
+	margin-left: 20px;
+}
 }

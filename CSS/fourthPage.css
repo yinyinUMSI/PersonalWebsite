@@ -1,17 +1,4 @@
-@media only screen and (max-width: 600px) {
-  .contactInfo {
-	display: grid;
-	justify-content: center;
-	align-items: center;
-	margin: auto;
-	grid-template-columns: repeat(auto-fit,minmax(600px,600px));
-	flex-wrap: wrap;
-	color: #DFE6E9;
-	font-family: 'Roboto',sans-serif;
-	line-height: 1.5em;
-	vertical-align: center;
-	}
-}
+
 
 #fourthScreen {
 	background-color: #312F35;
@@ -144,4 +131,22 @@
 	color: #312F35;
 	font-size: 10px;
 	font-family: 'Roboto',sans-serif;
+}
+
+@media (max-width: 600px) {
+  .contactInfo {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	grid-template-columns: repeat(auto-fit,minmax(400px,550px));
+	flex-wrap: wrap;
+	color: #DFE6E9;
+	font-family: 'Roboto',sans-serif;
+	line-height: 1.5em;
+	}
+	.contactPic > img {
+	width: 400px;
+	margin-left: 40px;
+}
 }
